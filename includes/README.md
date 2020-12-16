@@ -1,14 +1,7 @@
 # Kurien_Georgey_FIP
-The Final Integrated Project. 30% marks
-
-*Who doesn't love eggs?!?!*
-
-### Author
-Georgey Kurien aka GhostBadger or FalseTesla
-
 ## The Final Integrated Project - Cumlanation of all of the courses and the final for the first Semister
-The 30% assignment that is the endgame for the first semister.
 
+The 30% assignment that is the endgame for the first semister.
 ### Requirements
 -3 HTML pages with index.html, contact.html, and other pages of my choice.
 -images folder. (all images need to be my personal photographs or stock footage and images)
@@ -18,7 +11,7 @@ The 30% assignment that is the endgame for the first semister.
 -includes folder(readme file)
 
 ### Usage
-Clone the project, <code>cd</code> to your `directory/download`, and run the `index.html` file.
+Clone the project then open the index page
 
 ### My topic
 Eggs

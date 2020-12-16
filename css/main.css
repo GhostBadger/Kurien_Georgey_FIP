@@ -1,0 +1,175 @@
+div,p,body,header,footer,section,article,nav,h1,h2,h3,h4 { 
+margin: 0; 
+padding: 0; 
+} 
+/*for all these elements we are removing the default margin and padding*/
+
+img { 
+border: none; 
+margin: 0; 
+padding: 0; 
+}
+/*this doing the same thing as above but for images*/
+
+/*html selectors*/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  background-color: #ededed;
+  /*http://www.heropatterns.com/*/
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23c8c8c8' fill-opacity='0.33' fill-rule='evenodd'/%3E%3C/svg%3E");
+  /*this set a background image vector as a background this scales
+  the full site*/
+  /*heropatterns is the site he used*/
+}
+
+/*a:link is for not visited, a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited { 
+text-decoration:none; 
+/*no underline*/
+}
+
+a:hover, a:active { 
+text-decoration:none; 
+/*no underline*/
+ }
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+  display: none;
+}
+
+.container
+{
+	width: 980px;
+	margin: 0 auto;
+	background-color: #fff;
+	/*creates a basic container box with white background and width*/
+}
+
+.mainHeader
+{
+	display: flex;
+	/*makes the header container flex*/
+	flex-direction: row;
+	/* set flex direction as row left to right*/
+	justify-content: flex-start;
+
+}
+
+.logoHeader
+{
+	width: 200px;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	/*set logo width*/
+	/*sets margin spacing for the top, bottom, and left*/
+	/*don't need to do right as the spacing is going to be irrelevent*/
+}
+
+.mainNav
+{
+	margin-left: auto;
+	/*sets navigation to be seperated to the far right*/
+	width: 500px;
+	height: 25px;
+	/*we would get width and heigh from the photoshop file*/
+	margin-top: 45px;
+}
+
+.mainNav ul
+/*this looks inside main nav for the unordered list allows us to syle it*/
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+.mainNav ul li
+/*we are now going to the seperate list item inside main nav*/
+{
+	font-size: 14px;
+	display: inline;
+	/*this makes the items display side by side*/
+	margin-left: 25px;
+	/*only set margin spacing to one side otherwise it is double what we want*/
+}
+
+.manNav ul li a
+/*we are now customizing the anchor tags inside the main nav lists*/
+{
+	color: #2073a8;
+	padding: 5px;
+}
+
+.mainNav ul li a:hover
+/*we are targeting the hover effect of links inside main nav*/
+/*when someone hovers there mouse over the background colour
+around the text changes slightly*/
+{
+	background-color: #ddeff7
+}
+
+.selected
+/*this sets a visual indicator of which page you are on in main nav*/
+{
+	padding: 5px 0px 5px 0px;
+	/*Top, Right, Bottom, Left*/
+	background-color: #ddeff7;
+}
+
+.resources
+{
+	display: flex;
+	/*makes them display side by side*/
+	flex-direction: row;
+	justify-content: space-evenly;
+	/*spaces the content evenly once boxes are defined*/
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.packages, .fish, .donations
+/*selecting the 3 classes inside resources*/
+{
+	color: #fff;
+	width: 300px;
+}
+
+.resourse p
+{
+	margin-top: 20px;
+	line-height: 22px;
+	/*this puts spacing between the different lines of text*/
+	color: #666;
+	font-size: 16px;
+}
+
+.resBut
+{
+	display: block;
+	/*this allows them to display as a block element with width and colour*/
+	width: 100px;
+	/*defining width of button*/
+	background-color: #61a3c1;
+	padding: 15px;
+	/*padding gets background colour*/
+	text-align: center;
+	/*aligns the text in the centre*/
+	color: #fff;
+	font-weight: bold;
+	/*allows you to bold the text*/
+	margin-top: 20px;
+}
+
+.resBut:hover
+/*we don't need the a as the .resBut is applied direclty to the a*/
+{
+	background-color: #3f6e84;
+}
