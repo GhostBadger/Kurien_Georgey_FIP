@@ -44,14 +44,23 @@ text-decoration:none;
   display: none;
 }
 
+
+
 .container
 {
-	width: 980px;
+	width: 960px;
+	height: 1000px;
 	margin: 0 auto;
 	background-color: grey;
 	/*creates a basic container box with white background and width*/
 }
-
+#topBar
+{
+	width: 960px;
+	height: 20px;
+	margin: 0 auto;
+	background-color: white;
+}
 .mainHeader
 {
 	display: flex;
@@ -71,6 +80,19 @@ text-decoration:none;
 	justify-content: flex-start;
 
 }
+
+.contactIntro
+{
+	display: flex;
+	/*makes the header container flex*/
+	flex-direction: column;
+	/* set flex direction as row left to right*/
+	justify-content: flex-start;
+	text-align: center;
+}
+
+.mainNav h2
+
 
 .logoHeader
 {
