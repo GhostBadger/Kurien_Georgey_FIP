@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>The Eggseptional</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body>
+  <h1 class="hidden"></h1>
+  <div class="container">
+    
+      <header class="mainHeaderContact">
+          <div class="logoHeader">
+            <img src='assets/Kurien_Georgey_Egg_Logo.svg' onerror=this.onerror=null; this.src='assets/Kurien_Georgey_Egg_Log.png' alt='The Eggseptional Logo' id='logo' width=170 height=180 id="logo">
+            </div>
+            <nav class="mainNav">
+                <h2 class="hidden">Main Navigation</h2>
+                <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="food.html">FOOD</a></li>
+                <li class="selected"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section class="contactForm">
+          <h2>For more information call us or give us an email</h2>
+          <h3>The Eggseptional's associate Farms will be in touch and we would love to get in touch with you</h3>
+        </section>
+           
+        
+        <main id="mainContact">
+                    <h2>Contact Us</h2>
+          <section id="contactArea">
+                <h2 class="hidden">Contact Form</h2>
+
+                <p id="contactText">If you'd like some more information about recipes or would like to get in touch with the farm, please use this form. We appreciate your business.</p> 
+
+            <form id="contactForm" action="form.php" method="post">
+                    <label for="name">Name: (required)</label>
+                    <input type="text" required id="name" name="fullName" size="30" placeholder="Enter your name">
+                    
+                    <label for="email">Email: (we take care to keep your email safe)</label>
+                    <input type="email" required id="email" size="30" placeholder="Enter your Email">
+                    
+                    
+                    <label for="phone">Phone: (required)</label>
+                    <input type="tel" required id="phone" size="30" placeholder="Enter Phone Number">
+                    
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
+                                     
+                    <input id="submit" type="submit" value="Submit">
+            </form>
+
+          </section>
+        </main>
+        
+        
+        <footer class="mainFooter">
+      <div class="LogoNav">
+        <div class="logoFooter">
+          <img src="images/logo_asc.svg" alt="Akumal Sorkel Co." width="130" height="43" id="logoFooter">
+        </div>
+
+        
+      </div>  
+
+      <div class="socialMedia">
+        <h2 class="hidden">Social Media</h2>
+        <ul id="iconNav">
+            <li id="facebook">
+              <a href="http://www.facebook.com">
+                <img src="images/facebook.svg" alt="facebook">
+              </a>
+            </li>
+            <li id="twitter">
+              <a href="http://www.twitter.com">
+                <img src="images/twitter.svg" alt="twitter">
+              </a>
+            </li>
+            <li id="youtube">
+              <a href="http://www.youtube.com">
+                <img src="images/youtube.svg" alt="youtube">
+              </a>
+           </li>
+        </ul>
+      </div>     
+    </footer>
+        
+    </div><!--end container-->
+
+<script src="js/main.js"></script>
+</body>
+</html>
